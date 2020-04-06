@@ -1,0 +1,117 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #3b3b3b;
+    background: #eeedec;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+}
+
+p {
+    margin: 0 0 2.4rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+
+/* Layout
+------------------------*/
+.container {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+/* Weather
+------------------------*/
+.weather h1 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin: 1rem 0 1.6rem;
+}
+
+.weather h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.weather h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 0 0 1rem;
+}
+
+.weather span {
+    display: inline-block;
+    font-size: 3rem;
+}
+
+/* Header */
+.weather-header {
+    text-align: center;
+}
+
+/* Card */
+.weather-card {
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 3rem;
+    box-shadow: 0 4px 21px -98px rgba(0, 0, 0, 0.05);
+}
+
+/* Image */
+.weather-img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* Details */
+.weather-details {
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+.weather-temp {
+    font-size: 7.6rem;
+    font-weight: 300;
+    display: inline-block;
+}
+
+/* Form elements
+------------------------*/
+label {
+    font-weight: 600;
+}
+
+input[type="text"] {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 1.2rem 0;
+    padding: 1.2rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 21px -98px rgba(0, 0, 0, 0.05);
+}

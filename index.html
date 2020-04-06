@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Simple Weather</title>
+</head>
+<body>
+    <main class="container">
+        <section class="weather">
+            <header class="weather-header">
+                <h1>Simple Weather</h1>
+                <form class="location">
+                    <label for="city">Enter your location</label>
+                    <input type="text" name="city" id="city">
+                </form>
+            </header>
+            <div class="weather-card" hidden>
+                <img class="weather-img" src="https://via.placeholder.com/480x260" alt="">
+                <span class="weather-icon"></span>                
+                <div class="weather-details">
+                    <h2 class="weather-city">Miami</h2>  
+                    <h3>Weather conditions</h3>
+                    <p class="weather-temp">30</p> <span>&deg;F</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/forecast.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
