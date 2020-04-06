@@ -76,7 +76,7 @@ img {
     background: #fff;
     border-radius: 4px;
     margin-top: 3rem;
-    box-shadow: 0 4px 21px -98px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
 
 /* Image */
@@ -122,5 +122,5 @@ input[type="text"] {
     padding: 1.2rem 1rem;
     border-radius: 4px;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 21px -98px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
