@@ -13,16 +13,19 @@
             <header class="weather-header">
                 <h1>Simple Weather</h1>
                 <form class="location">
-                    <label for="city">Enter your location</label>
+                    <label for="city">Enter a location for weather information</label>
                     <input type="text" name="city" id="city">
                 </form>
             </header>
             <div class="weather-card" hidden>
-                <img class="weather-img" src="https://via.placeholder.com/480x260" alt="">
-                <span class="weather-icon"></span>                
+                <img class="weather-img" src="" alt="weather">
+                <div class="weather-icon">
+                    <img src="" alt="icon"> 
+                </div>
+                               
                 <div class="weather-details">
-                    <h2 class="weather-city">Miami</h2>  
-                    <h3>Weather conditions</h3>
+                    <h2 class="weather-city"></h2>  
+                    <h3 class="weather-desc"></h3>
                     <p class="weather-temp">30</p> <span>&deg;F</span>
                 </div>
             </div>

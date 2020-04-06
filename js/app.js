@@ -1,13 +1,24 @@
 const form = document.querySelector('.location')
 const card = document.querySelector('.weather-card')
+const image = document.querySelector('.weather-img')
+const icon = document.querySelector('.weather-icon img')
 
 const updateUI = data => {
-    const city = data.city
-    const weather = data.weather
+    const { city, weather } = data
 
-    // update weather details
+    // update city and temperature
     document.querySelector('.weather-city').innerHTML = city.EnglishName
     document.querySelector('.weather-temp').innerHTML = weather.Temperature.Imperial.Value
+    document.querySelector('.weather-desc').innerHTML = weather.WeatherText
+
+    // update image
+    let imageUrl = weather.IsDayTime ? 'img/day.svg': 'img/night.svg'
+    image.setAttribute('src', imageUrl)
+
+    // update icon 
+    let iconUrl = `img/icons/${weather.WeatherIcon}.svg`
+    icon.setAttribute('src', iconUrl)
+
 
     // show card
     card.hidden = false

@@ -34,7 +34,7 @@ img {
 /* Layout
 ------------------------*/
 .container {
-    max-width: 48rem;
+    max-width: 42rem;
     margin: 0 auto;
     padding: 3rem 0;
 }
@@ -83,6 +83,15 @@ img {
 .weather-img {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+}
+
+.weather-icon {
+    background: #eeedec;
+    top: -50px;
+    width: 100px;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto -50px;
 }
 
 /* Details */
