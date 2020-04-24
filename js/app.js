@@ -2,6 +2,7 @@ const form = document.querySelector('.location')
 const card = document.querySelector('.weather-card')
 const image = document.querySelector('.weather-img')
 const icon = document.querySelector('.weather-icon img')
+const forecast = new Forecast()
 
 const updateUI = data => {
     const { city, weather } = data
@@ -19,20 +20,8 @@ const updateUI = data => {
     let iconUrl = `img/icons/${weather.WeatherIcon}.svg`
     icon.setAttribute('src', iconUrl)
 
-
     // show card
     card.hidden = false
-}
-
-// update city
-const updateCity = async (city) => {
-    const details = await getCity(city) // search for city 
-    const weather = await getWeather(details.Key) // get weather using city key
-
-    return {
-        city: details,
-        weather: weather
-    }
 }
 
 // submit form
@@ -44,7 +33,7 @@ form.addEventListener('submit', e => {
     form.reset()
 
     // update ui with new city
-    updateCity(city)
+    forecast.updateCity(city)
         .then(data => {
             console.log('data:', data)
             updateUI(data)
@@ -58,7 +47,7 @@ form.addEventListener('submit', e => {
 })
 
 if(localStorage.getItem('city')) {
-    updateCity(localStorage.getItem('city'))
+    forecast.updateCity(localStorage.getItem('city'))
         .then(data => updateUI(data))
         .catch(err => console.log(err))
 }
